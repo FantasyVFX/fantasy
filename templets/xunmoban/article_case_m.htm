@@ -1,0 +1,74 @@
+<!doctype html><html class="effect"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="keywords" content="{dede:field.keywords/}"><meta name="description" content="{dede:field.description  function='html2text(@me)'/}"><meta name="author" content="XunmoBan"><link rel="shortcut icon" href="/favicon.ico" /><link type="text/css" href="/xunmoban/css/font-awesome.min.css" rel="stylesheet"><link type="text/css" href="/xunmoban/css/bxslider.min.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/xunmoban/css/animate.min.css"><link type="text/css" href="/xunmoban/css/stylem.css" rel="stylesheet"><link rel="stylesheet" type="text/css"  href="/xunmoban/css/964m.css"><title>{dede:field.title/}-{dede:global.cfg_webname/}</title></head><body><div id="sitecontent" class="transform"><div id="header"><div id="openlc" class="fl btn"><div class="lcbody"><div class="lcitem top"><div class="rect top"></div></div><div class="lcitem bottom"><div class="rect bottom"></div></div></div></div><a id="logo" href="/m/"><img src="/xunmoban/images/logom.png" /></a></div><div class="scrollView">
+<div class="npagePage">
+  <div class="content">
+    <div id="projectpost" class="projectpost4">
+            <ul id="projectimages" class="plr5 pro-slider4">{dede:productimagelist}
+                <li><img src="[field:imgsrc/]" class="imgcw"/></li>{/dede:productimagelist}
+                
+      </ul>
+      <div class="clear"></div>
+      <div class="header">
+       <p class="title">{dede:field.title/}</p>
+                        <p class="subtitle">{dede:field.shorttitle/}</p>
+              </div>
+      <div class="postbody plr10 description"><p>{dede:field.description function="cn_substr(@me,500)"/}</p><p><br /></p><p><a href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.kefu/}&site=qq&menu=yes" target="_blank">立 刻 联 系</a></p></div>
+      <div class="postbody plr10 postbody4">{dede:field.body/}</div>
+      </div>
+      
+      <div id="projectshow4">
+             <div id="projecttags4">{dede:tag row='10' sort='new'}
+			 <a target="_blank">[field:tag /]</a>{/dede:tag}</div>
+              <div id="projectib4">
+                  <div id="mproject" class="module"> 
+   <div class="content layoutmasonry">
+       <div class="module-content" id="projectlist">
+           <div class="wrapper">
+             <ul class="content_list" data-options-sliders="3" data-options-margin="30" data-options-ease="cubic-bezier(0.8,0.2,0.2,1)" data-options-speed="0">
+                              {dede:likearticle row='6'}<li id="projectitem_[field:autoindex runphp='yes']@me=$GLOBALS['autoindex']-1;[/field:autoindex]" class="projectitem wow">
+                 <a href="view.php?aid=[field:id/]" class="projectitem_content" target="_blank">
+                    <div class="projectitem_wrapper">
+                        <div class="project_img"><img src="[field:picname/]" width="650" height="385"/></div>
+                        <div class="project_info">
+                           <div>
+                              <p class="title">[field:title/]</p>
+                              <p class="subtitle">[field:shorttitle/]</p>
+                           </div>
+                        </div>
+                    </div>
+                  </a>
+               </li>{/dede:likearticle}
+                            </ul>
+          </div><!--wrapper-->
+       </div>
+       <!--projectlist-->
+   </div>
+</div><!--project-->
+           
+        </div>
+      </div>
+    <div id="pages"></div>
+  </div>
+</div>
+{dede:include filename="head_m.htm"/}
+</div><script type="text/javascript">var YYConfig={};</script><script type="text/javascript" src="/xunmoban/script/zepto.min.js"></script><script type="text/javascript" src="/xunmoban/script/zepto.bxslider.min.js"></script><script type="text/javascript" src="/xunmoban/script/wow.min.js"></script><script type="text/javascript" src="/xunmoban/script/masonry_4.min.js"></script><script type="text/javascript">$(function(){new WOW({scrollContainer:".scrollView"}).init();})</script><script type="text/javascript" src="/xunmoban/script/org.min.js"  data-main="BaseMain"></script></html>
+
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+	var img = $(".pro-slider4 img")[0];
+	
+	function sliderChulaiba(){
+		$('.pro-slider4').bxSlider({
+			nextText: '<i class="fa fa-angle-right"></i>',
+			prevText: '<i class="fa fa-angle-left"></i>',
+			auto: 0,
+			infiniteLoop: true,
+			hideControlOnEnd: true,		
+		}); 
+	}
+	if(img.complete)sliderChulaiba();
+	else $(".pro-slider4 img")[0].onload = function(e) {
+	   sliderChulaiba();
+    };
+});
+</script>

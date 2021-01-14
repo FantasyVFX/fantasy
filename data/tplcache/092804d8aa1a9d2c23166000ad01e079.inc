@@ -1,0 +1,1 @@
+<li style="background:url([field:imgsrc/]) no-repeat center;"><img src="[field:imgsrc/]" style="display:none;" /></li>

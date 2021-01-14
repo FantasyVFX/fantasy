@@ -1,0 +1,154 @@
+<!doctype html><html class="effect"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="keywords" content="{dede:global.cfg_keywords/}"><meta name="description" content="{dede:global.cfg_description/}"><meta name="author" content="XunmoBan"><link rel="shortcut icon" href="/favicon.ico" /><link type="text/css" href="/xunmoban/css/font-awesome.min.css" rel="stylesheet"><link type="text/css" href="/xunmoban/css/bxslider.min.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/xunmoban/css/animate.min.css"><link type="text/css" href="/xunmoban/css/stylem.css" rel="stylesheet"><link rel="stylesheet" type="text/css"  href="/xunmoban/css/964m.css"><title>{dede:global.cfg_webname/}</title></head>
+<body>
+<div id="sitecontent" class="transform">
+<div id="header"><div id="openlc" class="fl btn"><div class="lcbody"><div class="lcitem top"><div class="rect top"></div></div><div class="lcitem bottom"><div class="rect bottom"></div></div></div></div>
+<a id="logo" href="/m/"><img src="/xunmoban/images/logom.png" /></a></div><div class="scrollView">
+<div id="indexPage">
+  <div id="mslider">
+    <ul class="slider" id="t-slider">
+	{dede:arclist typeid='8' addfields='taempic' channelid='1' orderby='id' orderway='asc'}
+                <li>
+        	<a >
+        	<div class="slider_img"><img src="[field:taempic/]" class="imgcw"/></div>
+            <div class="slider_info">
+              <p class="title ellipsis">[field:shorttitle/]</p>
+                            <p class="subtitle">[field:description/]</p>
+                           </div>
+             </a>     
+        </li>
+      {/dede:arclist}
+     </ul>
+     <div class="clear"></div>
+    
+  </div>
+  <div id="mteam" class="module"><div class="content plr10"><div class="header">{dede:type typeid="5"}
+          <p class="title">[field:typename/]</p>
+          <p class="subtitle">[field:engtype/]</p>{/dede:type}</div><ul id="teamlist">
+		  {dede:arclist   row='3'    typeid='5'   }   
+		  <li class="teamitem wow fadeIn"><a href="view.php?aid=[field:id/]"><div id="mteam_img"><img src="[field:picname/]" width="90" height="90" /></div><div class="teaminfo"><div class="header"><p class="title">[field:title/]</p><p class="subtitle">[field:shorttitle/]</p></div><p class="description">[field:description function='cn_substr(Html2text("@me")."",250)'/]</p></div></a></li>
+		   {/dede:arclist} 
+		  </ul><a href="http://www.xunmoban.com" class="more">MORE</a><div style="height:0">&nbsp;</div></div></div><div id="mproject" class="module">
+  <div class="content">
+    <div class="header">
+      {dede:type typeid="1"}
+          <p class="title">[field:typename/]</p>
+          <p class="subtitle">[field:engtype/]</p>{/dede:type}
+    </div>
+    <div id="projectlist" class="masonry"  data-masonryitem=".projectitem">
+    
+      <!--yyLayout masonry-->
+       <div class="module-content" id="projectlist">
+                                 <div class="projectSubList" id="projectSubList_">
+               <div class="projectSubHeader">
+                   <p class="title"></p>
+                   <p class="subtitle"></p>
+               </div>
+               <div class="wrapper">
+                 <ul class="content_list" data-options-sliders="3" data-options-margin="30" data-options-ease="cubic-bezier(0.8,0.2,0.2,1)" data-options-speed="0">
+                                     {dede:arclist     typeid='1'    row='8'}
+									  <li id="projectitem_[field:autoindex runphp='yes']@me=$GLOBALS['autoindex']-1;[/field:autoindex]" class="projectitem wow">
+                     <a href="view.php?aid=[field:id/]" class="projectitem_content" target="_blank">
+                        <div class="projectitem_wrapper">
+                            <div class="project_img"><img src="[field:picname/]" width="650" height="385"/></div>
+                            <div class="project_info">
+                               <div>
+                                  <p class="title">[field:title/]</p>
+                                  <p class="subtitle">[field:shorttitle/]</p>
+                                  <p class="description hide">[field:description function='cn_substr(Html2text("@me")."",250)'/]</p>
+                               </div>
+                            </div>
+                        </div>
+                      </a>
+                   </li>
+                            {/dede:arclist}          <div class="clear"></div>
+                 </ul>
+              </div><!--wrapper-->
+            </div><!--projectSubList-->            
+                               </div>
+       <!--projectlist-->
+       <div class="clear"></div>
+    </div>
+   {dede:type typeid="1"}
+        <a href="list.php?tid=[field:id/]" id="projectmore">VIEW MORE</a>{/dede:type}</div>
+</div>
+<div id="mpage" class="module " >
+  <div class="content">
+    <div class="plr10">
+      <div class="header">{dede:type typeid="2"}
+        <p class="title">[field:typename/]</p>
+          <p class="subtitle">[field:engtype/]</p>
+        </div>
+      <p class="description">[field:description function='cn_substr(Html2text("@me")."...",500)'/]...</p>{/dede:type}
+    </div>{dede:type typeid="3"}
+    <a href="list.php?tid=[field:id/]" class="more">MORE</a>    <div class="fimg wow fadeIn">{/dede:type}
+    	<img src="/xunmoban/pic/habout.jpg" />
+    </div>
+      </div>
+</div>
+<div id="mnews" class="module">
+  <div class="content">
+    <div class="header">
+   {dede:type typeid="6"}
+      <p class="title">[field:typename/]</p>
+          <p class="subtitle">[field:engtype/]</p>{/dede:type}
+      </div>
+    <div id="newslist">
+	{dede:arclist   row='4'   typeid="6"}
+	<div class="newstitem plr10 wow fadeIn" data-wow-delay="0.[field:autoindex runphp='yes']@me=$GLOBALS['autoindex']-1;[/field:autoindex]s"><a class="newsinfo" href="view.php?aid=[field:id/]">
+      	<div class="newsimage"><img src="[field:picname/]" width="auto" height="auto"/></div>
+        <div class="newsdate">
+          <p class="md">[field:pubdate function="MyDate('m-d',@me)"/]</p>
+          <p class="year">[field:pubdate function="MyDate('Y',@me)"/]</p>
+        </div>
+        <div class="newsbody">
+          <p class="title ellipsis">[field:title/]</p>
+          <p class="description">[field:description function='cn_substr(Html2text("@me")."...",150)'/]...</p>
+        </div>
+        </a></div>
+      {/dede:arclist}  
+      </div>
+    <div class="clear"></div>
+   {dede:type typeid="6"}
+        <a href="list.php?tid=[field:id/]" id="projectmore">VIEW MORE</a>{/dede:type}
+    <div style="height:0">&nbsp;</div>
+  </div>
+</div>
+<div id="mpartner" class="module">
+  <div class="content">
+    <div class="wrapper">
+      <ul style="width:800px">
+{dede:arclist    typeid='13'     row='50'  }
+                <li><a href="[field:arcurl/]" title="logo name"  target="_blank" ><img src="[field:picname/]" width="160" height="80" /></a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+  </div>
+</div><div id="mcontact" class="module"><div class="content plr10 wow fadeIn"><div class="header"><p class="title">{dede:type typeid="7"}
+      <p class="title">[field:typename/]</p>
+          <p class="subtitle">[field:engtype/]</p>{/dede:type}</div><div id="contactlist"><div id="contactinfo"><h3 class="ellipsis name">{dede:global.cfg_corporate/}</h3><p class="ellipsis add"><span>地址：</span>{dede:global.cfg_address/}</p><p class="ellipsis tel"><span>电话：</span><a href='tel:{dede:global.cfg_tel/}'>{dede:global.cfg_tel/}</a></p><p class="ellipsis mobile"><span>手机：</span><a href='tel:{dede:global.cfg_mobile/}'>{dede:global.cfg_mobile/}</a></p><p class="ellipsis email"><span>邮箱：</span>{dede:global.cfg_email/}</p><div>
+		  <a class="fl" target="_blank" href="{dede:global.cfg_weibo/}" id="sweibo"><i class="fa fa-weibo"></i></a><a class="fl" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.kefu/}&site=qq&menu=yes"><i class="fa fa-qq"></i></a> <a id="mpbtn" class="fl" href="{dede:global.cfg_code/}"><i class="fa fa-weixin"></i></a></div></div></div></div></div></div>
+
+{dede:include filename="head_m.htm"/}
+
+</div><script type="text/javascript">var YYConfig={};</script><script type="text/javascript" src="/xunmoban/script/zepto.min.js"></script><script type="text/javascript" src="/xunmoban/script/zepto.bxslider.min.js"></script><script type="text/javascript" src="/xunmoban/script/wow.min.js"></script><script type="text/javascript" src="/xunmoban/script/masonry_4.min.js"></script><script type="text/javascript">$(function(){new WOW({scrollContainer:".scrollView"}).init();})</script><script type="text/javascript" src="/xunmoban/script/org.min.js"  data-main="IndexMain"></script></html>
+
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+	var img = $(".slider_img img")[0];
+	
+	function sliderChulaiba(){
+		$('#t-slider').bxSlider({
+			nextText: '<i class="fa fa-angle-right"></i>',
+			prevText: '<i class="fa fa-angle-left"></i>',
+			auto: 1,
+			infiniteLoop: true,
+			hideControlOnEnd: true,		
+		}); 
+	}
+	if(img.complete)sliderChulaiba();
+	else $(".slider_img img")[0].onload = function(e) {
+	   sliderChulaiba();
+    };
+});
+</script>

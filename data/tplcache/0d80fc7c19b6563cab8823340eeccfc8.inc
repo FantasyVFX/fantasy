@@ -1,0 +1,2 @@
+[field:global name=autoindex runphp="yes"]if(@me%9==0)@me="<li id='partneritem_0' class='wow'>";else @me="";[/field:global]
+		 <a href="[field:arcurl/]" title="[field:title/]" target="_blank"><img src="[field:picname/]" width="160" height="80" /></a>

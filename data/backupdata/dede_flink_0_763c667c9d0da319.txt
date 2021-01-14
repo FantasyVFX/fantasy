@@ -1,0 +1,3 @@
+INSERT INTO `dede_flink` VALUES('2','1','http://www.xunmoban.com','响应式网站模板','','','','1226375403','1','2');
+INSERT INTO `dede_flink` VALUES('9','1','http://www.xunmoban.com/','DedeCMS模板','','','','1227772717','1','2');
+INSERT INTO `dede_flink` VALUES('8','1','http://www.xunmoban.com','织梦模板','','','','1227772703','1','2');

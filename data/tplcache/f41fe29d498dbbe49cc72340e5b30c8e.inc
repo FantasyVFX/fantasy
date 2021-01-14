@@ -1,0 +1,1 @@
+<li style="background-image:url([field:litpic/])" ><div id="tempImage_[field:autoindex/]"></div><img style="display:none" src="[field:litpic/]" /><div class="mask"></div><a target="_blank" ><div><p class="title ellipsis">[field:shorttitle/]</p></div><div class="sliderArrow fa fa-angle-down"></div></a></li>

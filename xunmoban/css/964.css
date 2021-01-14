@@ -1,0 +1,340 @@
+@charset "utf-8";
+/*顶部导航背景默认色IPAD */
+html, body { background-color: #111; }
+#indexPage #mslider ul li.active p { font-family: "HELVETICANEUELTPRO-THEX", "微软雅黑"; }
+#indexPage #mslider ul li p.title { font-size: 38px; line-height: 42px; height: 42px; color: #fe2642; }
+#indexPage #mslider ul li p.subtitle { color: #7B7B7B; font-size: 14px; }
+.lowB #header { background: #FFF; }
+#indexPage a.more { height: 40px; font-size: 14px; line-height: 40px; font-family: "HELVETICANEUELTPRO-THEX", "微软雅黑"; color: #8a8a8a; border-color: transparent; border-radius: 0px; background-color: transparent; text-align: center; text-indent: 0px; display: block; width: 378px; height: 50px; line-height: 50px; font-size: 14px; margin: 20px auto 80px; border: 1px solid #2D2D2D; color: #fe2642; }
+#indexPage a.more i { font-size: 18px; }
+#indexPage a.more:hover { text-indent: 0px; background-color: #fe2642; border: 1px solid #fe2642; color: #fff; }
+#indexPage #mpartner .slider_control a:hover { background-color: #424242 }
+#pages a.active, #pages a:hover { background: #2D2D2D; color: #A8A8A8; }
+#newslist .newstitem:hover { background: transparent; }
+.bx-wrapper .bx-controls-direction a { background: transparent; }
+.bx-wrapper .bx-controls-direction a:hover { background-color: transparent; }
+#header ul li.navitem a { color: #C2C2C2; padding: 30px 30px; }
+#header.mini ul li.navitem a { padding: 20px 30px; }
+#header ul li.navitem a.active, #header ul li.navitem:hover a { color: #fe2642; }
+#header.mini ul li.navitem a.active, #header.mini ul li.navitem:hover a { padding: 20px 30px; }
+#header.mini ul li.navitem ul.subnav { transform: translate3d(0px, 10px, 0px); -webkit-transform: translate3d(0px, 10px, 0px); }
+#header.mini ul li.navitem:hover ul.subnav { transform: translate3d(0px, 0px, 0px); -webkit-transform: translate3d(0px, 0px, 0px); }
+#header.mini ul li.navitem ul.subnav li a { padding: 14px 30px; }
+#header ul li.navitem ul.subnav li a { border-bottom: medium none transparent; padding: 14px 30px; width: 150px; height: 20px; line-height: 20px; background-color: #272727; display: block; font-size: 12px; transition: all 0.2s ease-out 0s; color: #999; }
+#header ul li.navitem ul.subnav li a:hover { text-indent: 10px; background-color: #262626; color: #FEFEFE; }
+#header ul li.navitem ul.subnav { border-top: 0px solid #7B7B7B; border-radius: 0px; box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.16); }
+#header ul li.navitem ul.subnav li { border-bottom: 1px solid #323232; }
+.content .header p.subtitle { color: #636363; font-size: 14px; }
+#indexPage #mteam .summary p.title::before { position: absolute; content: ""; width: 42px; height: 1px; background-color: #3C3C3C; margin: 88px 0px 0 0px; transition: all 0.3s ease-out 0s; }
+#indexPage #mteam li:hover .summary p.title::before { background-color: #fe2642; margin: 88px 0px 0 -37px; width: 13px; }
+#category a { padding: 8px 30px; margin-right: 10px; transition: all 0.3s ease-out 0s; border: 1px solid transparent; color: #999; }
+#category a.active, #category a:hover { color: #fe2642; border: 1px solid transparent; background-color: transparent; }
+#indexPage #mproject .bgmask, #indexPage #mnews .bgmask, #indexPage #mservice .bgmask, #indexPage #mpage .bgmask { background-color: rgba(255, 255, 255, 0); }
+#indexPage #mnews .bgmask { background-color: rgba(9, 9, 9, 0.7); display: block; }
+#contactform p textarea.inputtxt { height: 80px; }
+#contactform p .inputtxt { border: none; margin-bottom: 5px; background: none; }
+#contactform p { border-bottom: 1px solid #dddddd; padding-top: 5px; }
+.content .header p.title { font-family: "HELVETICANEUELTPRO-THEX", "微软雅黑"; color: #E7E7E7; font-size: 22px; }
+#footer { background-color: #151515; border-top: 1px solid #292929; }
+#indexPage #mteam .slider_control a i:hover { color: #f0f0f0; }
+.teamitem a div.wrap span { background-color: #fe2642; }
+#contactinfo div a { background: #484848; }
+#footer p { text-align: center; color: #565656; }
+.teamitem a div.wrap { background: #171717; }
+bx-wrapper .bx-pager.bx-default-pager a { width: 20px; height: 4px; margin: 0px 5px; border-radius: 6px; border: 1px solid #C8C8C8; }
+#shares a { background: transparent; }
+#shares a#gotop { margin-top: 1px; background-color: rgba(93, 93, 93, 0.2); transition: all 0.3s ease-out 0s; }
+#shares a#gotop:hover { background-color: rgba(0, 0, 0, 0.8); }
+#shares a#sweibo { background-color: #303030; transition: all 0.3s ease-out 0s; }
+#shares a#sshare { color: transparent; }
+#shares a#sweibo:hover { background: #EA493C; }
+#shares a#sweixin { background-color: #303030; transition: all 0.3s ease-out 0s; }
+#shares a#sweixin:hover { background-color: #24B727; }
+#header .content { padding: 0px; }
+#header ul#nav { float: right; padding: 0px 40px; transition: all 0.3s ease-out 0s; }
+#header.mini ul#nav { padding: 0px 20px 0px 20px; }
+#header.mini { padding-top: 0px; background-color: #111; }
+#header ul li.navitem { padding: 20px 0.5px; height: auto; }
+#header.mini ul li.navitem { padding: 10px 0.5px; }
+#header { padding-top: 0px; }
+#header #logo { padding: 20px 40px; transition: all 0.3s ease-out 0s; }
+#header #logo img { transform: scale(1, 1); transition: all 0.3s ease-out 0s; }
+#header.mini #logo { padding: 10px 20px 10px 20px; }
+#header.mini #logo img { transform: scale(0.8, 0.8); }
+.nobanner #header { background-color: #0F0F0F; }
+#olx_head { background: #1D1D1D; border-radius: 0px; color: #f0f0f0; }
+#online_lx { border-radius: 0px; bottom: 130px; margin-right: -10px; background-color: #333; }
+#olx_qq li a:hover i { color: #f0f0f0; }
+#online_open { background-color: #444; bottom: 130px; margin-right: -10px; }
+#olx_tel div { color: #a5a5a5; }
+#olx_tel p { color: f8f8f8; }
+#olx_qq li a { background-color: #323232; border-bottom: #3e3e3e 1px solid; color: #A2A2A2; }
+#olx_qq li a:hover { padding: 18px 30px; background-color: #292929; }
+#shares { right: 0px; }
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus { border: 1px solid transparent; background-color: transparent; }
+.bx-wrapper .bx-pager.bx-default-pager a { border-radius: 0px; border: #383838 1px solid; width: 6px; height: 6px; }
+.bx-wrapper .bx-pager.bx-default-pager a:hover { border: 1px solid rgba(255,255,255,.6); background-color: rgba(225,255,255,0); }
+.npagePage4 .bx-wrapper .bx-pager { background-color: #0F0F0F; padding: 20px 0; bottom: 0px; }
+#indexPage #mservice .fw { width: auto; }
+#indexPage #mservice .slider_control { width: 0px; height: auto; }
+#indexPage #mservice .slider_wrapper { width: 100%; height: auto; background-color: #F3F3F3; }
+#indexPage #mservice .slider_wrapper .slider { width: 100%; margin-left: 1%; }
+.serviceitem a { display: block; height: 120px; margin: 50px auto 20px; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+.serviceitem:hover { padding: 0; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.16); }
+.serviceitem { box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); height: 360px; margin-right: 1%; width: 32%; margin-top: 20px; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; margin-bottom: 20px; background-color: #fff; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0); }
+.serviceitem div p.description { font-size: 12px; color: #7b7b7b; height: 50px; overflow: hidden; width: 70%; margin-top: 10px; padding: 0 15%; transition: all 0.2s ease-out 0s; }
+.serviceitem div p.title { width: 70%; padding: 0 15%; color: #6C6C6C; }
+#indexPage #mservice .content .header p.title { color: transparent; font-size: 0px; }
+#indexPage #mservice .content .header p.subtitle { color: transparent; font-size: 0px; line-height: 0px; }
+#indexPage #mservice .content .header { padding-top: 0px; padding-bottom: 0px; }
+#indexPage #mservice { height: 400px }
+.serviceitem:hover .title { color: #1E1E1E; }
+.serviceitem:hover div p.description { color: #838383; ; }
+#indexPage #mpage .slider_wrapper li .fimg { width: 50%; height: 600px; background-size: cover; }
+#mpage .content .header { width: 50%; float: right; padding-top: 90px; padding-bottom: 40px; }
+#mpage .module-slider .description { max-height: 108px; height: auto; line-height: 26px; padding-right: 10.1%; padding-left: 10.1%; float: right; width: 30%; }
+#indexPage #mpage a.more { width: 14%; float: right; margin-left: 18%; margin-right: 18%; border-radius: 0px; text-align: center; text-indent: 0px; }
+#indexPage #mpage .slider_wrapper li { background-color: #f3f3f3; }
+#indexPage #mnews, #indexPage #mpartner, #indexPage #mteam, #indexPage #mproject, #indexPage #mcontact, #indexPage #mservice, #indexPage #mpage { background-color: #111; }
+#indexPage #mpage { background-color: #1b1b1b; }
+#indexPage #mcontact { height: 260px; }
+#indexPage #mteam { height: 380px; min-height: 380px; border-bottom: 1px solid rgba(255,255,255,.08); }
+#newslist .newsinfo { display: block; float: none; margin: 0; padding: 0 60px; position: relative; transform: translate3d(0px, -14px, 10px ); -webkit-transform: translate3d(0px, -14px, 10px ); -moz-transform: translate3d(0px, -14px, 10px ); }
+#newslist .newstitem:hover .newsinfo { transform: translate3d(0px, -14px, 10px); -webkit-transform: translate3d(0px, -14px, 10px); -moz-transform: translate3d(0px, -14px, 10px); }
+#newslist .newsbody .title { width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 16px; line-height: 24px; color: #B7B7B7; transition: all 0.3s ease-out 0s; }
+#newslist .newsbody .description { width: 100%; margin-top: 20px; font-size: 12px; color: #777; text-align: left; }
+#newslist .newsbody .date { color: #7E7E7E; }
+#newslist .newsbody .date .md { margin-right: 10px; }
+#newslist .newstitem:hover .description { color: #C3C3C3; }
+#newslist .newsdate { width: auto; margin: 0 0 20px; background-color: transparent; transition: all 0.3s ease-out 0s; }
+#newslist .newstitem:hover .newsdate { background-color: transparent; }
+#newslist .newscontent { height: auto; margin: 0; padding: 0; width: 100%; }
+.newsdate p { float: inherit; padding: 0; width: auto; }
+#newslist .newsinfo .year { font-size: 16px; border-left: 20px solid #B9B9B9; line-height: 0px; height: 1px; padding: 0 0 0 15px; }
+#newslist .newstitem i { text-indent: -100px; color: transparent; font-size: 36px; margin-top: -200px; }
+#newslist .newstitem:hover i { text-indent: -80px; margin-top: -200px; }
+#newslist .newsbody { margin-left: 0; width: 100%; }
+#newslist { width: 1200px; margin: 0px auto; }
+#newslist, #newslist .wrapper, #indexPage #mnews .content_list { max-width: 1240px; }
+#indexPage #mservice a.more { display: none; }
+#servicelist .serviceitem { height: 360px; margin-right: 1%; width: 32%; margin-top: 20px; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; background-color: #202020; margin-bottom: 0px; }
+#servicelist .serviceitem:hover { background-color: #111; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); }
+#servicelist .serviceitem:hover .title { color: #fe2642; }
+#servicelist .serviceitem:hover .description { color: #B0B0B0; }
+#servicelist .serviceitem div p.description { color: #7B7B7B; }
+#servicelist .serviceitem div p.title { color: #CFCFCF; }
+#servicelist { width: 100%; }
+#servicelist .wrap { width: 100%; margin-left: 1%; }
+#projectinfo { width: 340px; float: right; padding: 0px 50px; margin-left: 0px; }
+#projectwrap.fw { width: 100%; }
+#projectimages li img { display: block; float: none; margin: 0px auto; max-width: 100%; }
+#projectbody { max-width: 100%; margin: 0px auto; width: calc(100% - 490px); float: left; padding: 0 0 0 50px; }
+#projectimages li img { display: block; float: none; max-width: 100%; margin: 0px auto; }
+#projectimages { padding: 50px; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); }
+#projectinfo .description a { background: #2D2D2D; }
+#projectinfo .description a:hover { background: #2D2D2D; color: #f0f0f0; }
+.teamitem .teaminfo { text-align: left; }
+#projectmore { color: #f0f0f0; height: 100px; line-height: 100px; background: #262626; font-family: "HELVETICANEUELTPRO-THEX", "微软雅黑"; font-size: 18px; }
+#projectmore:hover { color: #f0f0f0; height: 100px; line-height: 100px; background: #262626; font-size: 18px; }
+.wrapper { margin: 0px auto; }
+#projectlist .projectitem { float: none; -webkit-backface-visibility: hidden;/*谷歌图片闪烁*/ -webkit-transform-style: preserve-3d; padding: 0em; margin-right: 20px; background-color: transparent; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+#projectlist .projectitem .project_info { top: auto; height: 1px; }
+#projectlist .projectitem .project_info div.line1 { margin: 10px 0 0 20px; width: 3px; height: 1px; background: #a5a5a5; top: 0; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+#projectlist .projectitem a:hover .project_info div.line1 { width: 30px; }
+#projectlist .projectitem a:hover .project_info { background: transparent; }
+#projectlist .projectitem .project_info div { top: 0; margin: 0 auto; }
+#projectlist .projectitem .project_info p.title { color: #7B7B7B; text-align: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-top: -70px }
+#projectlist .projectitem .project_info p.subtitle { margin-top: 0; color: #BABABA; text-align: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#projectlist .projectitem a img { width: 100%; height: auto; float: none; display: block; }
+#projectlist .projectitem a:hover img { transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); -moz-transform: scale(1.1, 1.1); }
+#projectlist .projectitem a:hover .project_info p.title { margin-top: -70px; color: rgb(60, 60, 60); color: #fff; }
+#projectib .projectitem a:hover .project_info p.title { margin-top: -42px; }
+#projectib .projectitem a .project_info { height: 40px; }
+#projectib .projectitem { width: 150px; padding: 0em; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; margin-right: 20px; margin-bottom: 10px; }
+#projectib .projectitem a img { width: 100%; height: auto; float: none; margin-bottom: 50px; display: block; }
+#projectib .projectitem a .project_info p.title { margin-top: -42px; }
+#mteam .content .header { padding-top: 130px; padding-bottom: 20px; }
+#indexPage #mteam .header p.title { text-align: left; margin: 30px auto auto; }
+#indexPage #mteam .header p.subtitle { text-align: left; margin: 0px auto; }
+#indexPage #mteam .slider_control { height: 60px; width: 60px; margin-top: 220px; }
+#contactform p .inputtxt { width: 0; height: 0; line-height: 0; padding: 0; color: transparent; background-color: transparent; margin-bottom: 0; }
+#contactform p .inputsub { width: 0; }
+#contactinfo { width: 1180px; }
+#contactinfo h3 { float: left; width: 100%; color: #B4B4B4; margin-bottom: 12px; }
+#contactinfo p { width: auto; float: inherit; padding-right: 40px; color: #606060; }
+#indexPage #mcontact .content { width: 1180px; }
+#contactinfo div { clear: both; margin-top: 120px; }
+#mcontact .content .header { padding-top: 30px; }
+#indexPage .module .content { position: relative; margin: 0; top: 0 }
+#indexPage #projectlist .projectitem, #projectlist .projectitem { padding-bottom: 88px; }
+#projectlist { margin: 0 auto }
+#projectlist .projectitem a .project_info p { padding: 0 }
+#indexPage #mservice .content { height: auto; margin-top: 0; }
+#indexPage #mpage .content { height: auto; margin-top: 0; }
+#indexPage #mteam .content { height: auto; margin-top: 0; padding: 50px 0px; }
+#indexPage #mproject .content { height: auto; margin: 0; }
+#indexPage #mnews .content { height: auto; margin-top: 0; }
+#indexPage #mpartner .content { height: auto; margin-top: 0; }
+#indexPage #mcontact .content { height: auto; margin-top: 0; }
+#indexPage a.more i { font-size: 18px; display: none }
+.npagePage .content { background-color: #111; }
+#indexPage #mproject .content .header { padding-top: 80px; }
+#mproject #category { display: block; }
+#mproject #projectlist { max-width: 1200px; margin: 0 auto; width: 90%; padding-bottom: 100px; }
+#projectlist .projectitem a .project_info { top: auto; bottom: 0px; height: auto; }
+#projectlist .projectitem a .project_info p.title { color: #C0C0C0; margin-top: -70px; }
+#projectlist .projectitem a .project_info p.subtitle { color: #6F6F6F; margin-top: 0px; }
+#projectlist .projectitem a:hover .project_info p.subtitle { color: #7A7A7A; }
+#projectlist .projectitem a .project_info div:after { content: ''; display: block; margin: 10px 0 0 0; width: 3px; height: 1px; background: #3e3e3e; top: 0; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+#indexPage #mproject .content .wrapper .content_list { margin: 0 auto; }
+#projectlist .projectitem:hover a .project_info div:after { width: 30px; background-color: #fe2642; }
+#indexPage #mproject a.more { width: 378px; height: 50px; line-height: 50px; font-size: 14px; margin-bottom: 0px; margin-top: 20px; border: 1px solid #2D2D2D; color: #fe2642; }
+#indexPage #mproject a.more:hover { background-color: #fe2642; border: 1px solid #fe2642; color: #fff; }
+#indexPage #mteam .content > .header { display: none; }
+#indexPage #mteam .header img { float: left; margin: 0px 50px 0 0; border-radius: 0px; width: 100%; height: auto; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+#indexPage #mteam .content_list li:hover .header img { transform: scale(1.1, 1.1); }
+#indexPage #mteam .header p.title { text-align: left; color: #5a5a5a; text-align: center; }
+#indexPage #mteam .header p.subtitle { text-align: left; text-align: center; }
+#mteam .content .header { padding-bottom: 30px; padding-top: 80px; }
+#contactinfo div { clear: both; margin-top: 90px; }
+#contactinfo div a { color: #fff; background: rgba(129, 129, 129, 0.3); margin-right: 20px; }
+#indexPage #mteam .module-content .header a { position: absolute; left: 110px; display: block; overflow: hidden; width: 180px; height: 180px; max-height: 180px; }
+#indexPage #mteam .summary { float: left; width: 760px; margin-top: 18px; margin-left: 340px; }
+#indexPage #mteam .summary p { text-align: left; }
+#indexPage #mteam .bx-wrapper .bx-prev { left: 0; margin-top: 0 }
+#indexPage #mteam .bx-wrapper .bx-next { right: 0; margin-top: 0 }
+#indexPage #mteam .module-content .header { padding-top: 50px; }
+#indexPage #mteam .summary p.title a { color: #fff; font-size: 22px; }
+#indexPage #mteam .summary p.subtitle { color: #a5a5a5; }
+#indexPage #mteam .summary .description { width: 680px; font-size: 13px; height: 50px; line-height: 24px; padding-left: 60px; transition: all 0.3s ease-out 0s; color: #999; }
+#indexPage #mteam li:hover .summary .description { padding-left: 0px; color: #bebebe; }
+#indexPage #mteam .module-content .header a::before { position: absolute; content: ""; width: 158px; height: 158px; margin-top: 10px; z-index: 10; border: 1px solid transparent; left: 10px; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+#indexPage #mteam .module-content li:hover .header a::before { border: 1px solid rgba(255,255,255,.2); box-shadow: 6px 0px 30px rgba(0, 0, 0, 0.9); }
+#indexPage #mteam .module-content .header::after { position: absolute; content: ""; width: 180px; height: 180px; margin-top: -20px; background-color: rgba(0,0,0,.2); left: 130px; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; z-index: -1; }
+#indexPage #mteam .module-content li:hover .header::after { background-color: rgba(0,0,0,.8); }
+#indexPage #mteam .bx-viewport { min-height: 230px; }
+#indexPage #mpage .wrapper li .fimg { width: 50%; height: 400px; background-size: cover; }
+#mpage .module-content .description { max-height: 108px; height: auto; line-height: 26px; padding-right: 10.1%; padding-left: 10.1%; float: right; width: 30%; }
+#indexPage #mservice { background-color: #080808; }
+#indexPage #servicelist .serviceitem { margin-top: 20px; }
+#servicelist .serviceitem a { margin: 0 }
+#servicelist .serviceitem a img { margin: 0px auto 20px; padding-top: 50px; }
+#servicelist .serviceitem div p.description { width: auto; }
+#indexPage #mservice .wrapper .bx-viewport { padding-bottom: 40px }
+#mnews .content .header { padding-top: 80px; padding-bottom: 60px; }
+#indexPage #mnews .content .header { display: block; }
+#newslist .newstitem .news_wrapper { position: inherit; padding-top: 16px; }
+#newslist .newstitem.left a.newscontent, #newslist .newstitem.right a.newscontent { width: auto; padding-left: 180px; }
+#newslist .newstitem.left a.newscontent:hover, #newslist .newstitem.right a.newscontent:hover { padding-left: 180px; }
+#newslist .newstitem.right a.newscontent { padding-right: 0 }
+#newslist .newstitem.right a.newscontent:hover { padding-right: 0 }
+#newslist .newstitem a.newscontent:hover .news_wrapper, #newslist .news_wrapper { width: 100%; }
+#newslist .separator { display: none; }
+#newslist .newstitem { border-bottom: 1px solid transparent; float: left; height: auto; height: auto; margin-bottom: 80px; }
+#newslist .news_wrapper { background: transparent }
+#newslist .newsbody p.date { font-family: "HELVETICANEUELTPRO-THEX", Arial; height: 30px; font-weight: 300; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+#newslist .newstitem:hover .newsbody p.date { margin-left: 80px; color: #DADADA; }
+#newslist .newstitem a.newscontent { text-align: left; }
+#newslist .newstitem .md span { display: none; }
+#newslist .newstitem .md::after { content: ''; display: block; border-bottom: 1px solid #454545; width: 30px; position: absolute; left: 0; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+#newslist .newstitem:hover .md::after { width: 110px; }
+#newslist .newstitem .newsimg { width: 160px; height: 160px; background-color: #f4f4f4; }
+#newslist .bx-viewport { min-height: 160px }
+#newslist .newstitem.right a.newscontent .newsimg { left: 0; }
+#indexPage #mnews .newstitem a.details { display: block; position: absolute; z-index: 20; top: -3px; background: none; width: 100px; height: 20px; margin: 0px; border-radius: 0px; line-height: 21px; text-indent: -94px; overflow: hidden; border: none; right: 90px; }
+#newslist .newstitem:hover p.title { color: #fe2642; }
+#indexPage #mpartner .content .header { display: none; }
+#indexPage #mpartner .module-content { padding: 30px 0; height: 80px; }
+#indexPage #mpartner .wrapper { height: auto; }
+#indexPage #mpartner .wrapper ul li { height: 80px; margin-top: 10px; }
+#indexPage #mpartner .wrapper ul li a { width: 112px; height: auto; margin-right: 10px; }
+#indexPage #mpartner .bx-wrapper .bx-pager { display: none; }
+#indexPage #mpartner .bx-wrapper .bx-controls-direction { display: block; }
+#indexPage #mpartner .bx-wrapper .bx-controls-direction a.disabled { display: block; }
+#indexPage #mpartner .bx-wrapper .bx-prev { left: -58px; }
+#indexPage #mpartner .bx-wrapper .bx-next { right: -58px; }
+#indexPage #mcontact .content { margin: 0 auto; }
+#indexPage #mcontact .content .header { visibility: hidden; }
+#indexPage #mcontact .content .fw { width: 1180px; }
+#footer a path { fill: rgb(148, 148, 148); }
+#servicelist .serviceitem { text-align: center; }
+#servicelist .serviceitem a img { display: inline-block; }
+#mproject.npagePage #category { margin-top: 30px; }
+.npagePage #projectlist .content_list { max-width: 1600px; margin: 0 auto; }
+.npagePage #projectlist .projectitem { margin: 0px; }
+.Pageteam .teamitem .title a { color: #fff; }
+#teambody .theader .title { color: #fff; }
+.postbody hr { border-top: 1px dotted rgb(53, 53, 53); }
+.Pagenews #newslist .newstitem:hover p.title { text-decoration: none; }
+.projectSubList, .projectSubList .content_list { width: 100%; }
+#projectlist .projectitem { width: 380px }
+#indexPage .module { z-index: auto; }
+#category a::after { content: ''; position: absolute; width: 12px; height: 1px; margin-left: 31px; margin-top: 7px; background-color: #3C3C3C; }
+#category a:last-child::after { width: 0px; }
+.Pageanli #category li a::after { content: ''; position: absolute; width: 12px; height: 1px; margin-left: 31px; margin-top: 7px; background-color: #3C3C3C; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+.Pageanli #category li:last-child a::after { width: 0px; }
+#projectlist .projectitem a::before { position: absolute; content: ""; width: calc(100% - 40px); height: calc(100% - 130px); margin-top: 20px; margin-left: 20px; z-index: 10; border: 1px solid transparent; transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+#projectlist .projectitem:hover a::before { border: 1px solid rgba(255,255,255,.5); box-shadow: 6px 0px 40px rgba(0, 0, 0, 0.4); }
+#projectlist .projectitem a::after { content: ''; width: 40px; height: 40px; line-height: 40px; background: url(../images/jia.png); margin: 0 auto; display: inline-block; position: absolute; top: 0px; left: 1px; z-index: 10; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; opacity: 0; }
+#projectlist .projectitem:hover a::after { opacity: 1; top: 10%; }
+#projectlist .wrapper { margin-left: 0; }
+#mslider .bx-wrapper .bx-pager.bx-default-pager a { margin: 0 40px 0 0; }
+#mslider .bx-wrapper .bx-pager-item::before { position: absolute; content: ""; height: 1px; background: #3C3C3C; width: 30px; margin: 4px 0 0 -10px; border-radius: 3px; }
+#mslider .bx-wrapper .bx-pager-item::after { position: absolute; content: ""; height: 40px; background: #111; width: 96px; margin: -25px 0 0 -74px; z-index: -1; border-radius: 0px; }
+#mslider .bx-wrapper .bx-pager-item:last-child::before { position: absolute; content: ""; height: 0px; width: 0px; }
+#indexPage #mslider .bx-wrapper .bx-pager { bottom: 0px; margin-left: 20px; }
+#mslider .bx-wrapper .bx-controls-direction { display: block; }
+#header ul li.navitem a::after { content: ''; position: absolute; width: 12px; height: 1px; margin-left: 22px; margin-top: 19px; background: rgba(255,255,255,.3); transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+#header ul li.navitem ul.subnav li a::after { display: none; }
+#header ul li.navitem:last-child a::after { width: 0px; }
+#indexPage .module .bgmask { background-color: transparent; }
+#indexPage #mcontact .header p.title, #indexPage #mcontact .header p.subtitle { color: transparent; font-size: 0; }
+#projectib5 #projectlist .projectitem a::before { }
+#projectib5 #projectlist .projectitem { overflow: hidden; padding-bottom: 0px; width: 45% !important }
+#projectib5 #mproject #projectlist { width: 100%; }
+.npagePage #projectib5 #projectlist .content_list { width: 100% !important; }
+#projectib5 #projectlist .projectitem a::before { width: calc(100% - 40px); height: calc(100% - 100px); }
+.npagePage4 .bx-viewport { background-color: #0F0F0F; min-height: 700px; }
+#post_slider li, #post_slider1 li { height: 650px; background-size: auto 100% !important; }
+#post_slider { height: 700px; }
+#projectinfo4 .header { float: left; padding: 0; }
+#projectinfo4 { width: 100%; background-color: #111; }
+#projectwrap4 { margin-top: 0px; width: 100%; }
+#projectwrap4 #projectih4 { width: 1200px; margin: 0 auto; }
+#projectinfo4 .header .title-warp { margin: 30px 0px; float: left; width: 340px; }
+#projectinfo4 .header .description { margin: 36px 0px 36px 40px; position: relative; width: 820px; float: right; }
+#projectinfo4 .header p.title { color: #fff; font-size: 20px; text-align: right; max-width: 300px; }
+#projectinfo4 .header::after { content: ''; position: absolute; width: 1px; height: 35px; margin-left: 0px; margin-top: 37px; background: rgba(255,255,255,.1); }
+.postbody4 { width: 1200px; margin: 0 auto; margin-top: 30px; }
+#projectinfo4 .header p.subtitle { font-size: 12px; text-align: right; max-width: 300px; }
+#projectshow4 #projecttags4 { width: 1200px; margin: 0 auto; }
+#npagePage #projectlist .projectitem a .project_info p.title { color: #C5C5C5; margin-top: -70px; }
+#npagePage #projectlist .projectitem a .project_info p.subtitle { color: #898989; height: auto; line-height: inherit; }
+#npagePage #projectlist .projectitem a .project_info { position: absolute; }
+#npagePage #projectlist .projectitem a:hover .project_info { height: auto; }
+#npagePage #projectlist .projectitem a .project_info div { margin-top: -15px; }
+.bx-wrapper .bx-pager.bx-default-pager a.active { border: 1px solid #fe2642; background-color: #fe2642; }
+.bx-controls { margin: 0 auto; }
+#indexPage #mnews .content_list:after { content: ''; display: block; clear: both; }
+#newslist .newsbody .description { transition: all 0.3s ease-out 0s; height: 44px; overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+#newslist .newstitem { height: 160px; }
+#indexPage #mnews .content_list { height: auto; }
+#newslist .bx-viewport { overflow: visible !important; }
+#projectinfo4 .description a { width: 40%; background-color: #292929; }
+#projecttags4 a { background-color: #292929; color: #f0f0f0; }
+#projectinfo4 .header p { line-height: 22px; }
+.bx-wrapper .bx-controls-direction a.bx-next i { margin-left: 0px; transition: all 0.3s ease-out 0s; }
+.bx-wrapper .bx-controls-direction a.bx-next:hover i { margin-left: 16px; color: #fe2642; }
+.bx-wrapper .bx-controls-direction a.bx-prev i { margin-left: 26px; transition: all 0.3s ease-out 0s; }
+.bx-wrapper .bx-controls-direction a.bx-prev:hover i { margin-left: 10px; color: #fe2642; }
+.bx-wrapper .bx-controls-direction a.bx-next i::after { position: absolute; content: ""; width: 4px; height: 1px; top: 16px; background-color: rgba(255,255,255,.2); left: 18px; transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+.bx-wrapper .bx-controls-direction a.bx-next:hover i::after { left: -10px; background-color: #fe2642; width: 10px; }
+.bx-wrapper .bx-controls-direction a.bx-prev i::after { position: absolute; content: ""; width: 4px; height: 1px; top: 16px; background-color: rgba(255,255,255,.2); left: -10px; transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+.bx-wrapper .bx-controls-direction a.bx-prev:hover i::after { left: 10px; width: 10px; background-color: #fe2642; }
+#indexPage #mteam .bx-viewport ul li { width: 500px; }
+#newslist .newstitem .newsimg::before { position: absolute; content: ""; width: 138px; height: 138px; margin-top: 10px; z-index: 10; border: 1px solid transparent; left: 10px; transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+#newslist .newstitem:hover .newsimg::before { border: 1px solid rgba(255,255,255,.2); box-shadow: 6px 0px 30px rgba(0, 0, 0, 0.9); }
+#category li.hasmore div ul a.active, #category li.hasmore div ul a:hover { background: #2d2d2d; }
+/*.yyloading{ background-color:#111;}*/
+.netmask.loading div i{background-color:#111;}
+.bx-wrapper .bx-loading{background-color:#111;}

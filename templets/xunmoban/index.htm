@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="{dede:global.cfg_keywords/}">
+<meta name="description" content="{dede:global.cfg_description/}">
+<meta name="author" content="XunmoBan">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/xunmoban/css/lib.css">
+<link rel="stylesheet" type="text/css"  href="/xunmoban/css/style.css">
+<link rel="stylesheet" type="text/css"  href="/xunmoban/css/964.css">
+<script type="text/javascript" src="/xunmoban/script/jquery-1.11.3.min.js"></script><script type="text/javascript" src="/xunmoban/script/org.js" data-main="indexMain"></script><meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.php";}else if(/iPad/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.php";}else{}}catch(e){}}}}</script>
+<title>{dede:global.cfg_webname/}</title>
+</head><body >
+<div id="header" class="index_nav">
+  {dede:include filename="head.htm"/}
+    <div class="clear"></div>
+  </div>
+  <a id="headSHBtn" href="javascript:;"><i class="fa fa-bars"></i></a></div>
+<div id="sitecontent">
+<div id="indexPage">
+<div id="mslider" class="module">
+<script type="text/javascript">$(function(){$("#mslider li video").each(function(index, element) {element.play();});})</script>
+<ul class="slider" data-options-height="650" data-options-auto="1" data-options-mode="0" data-options-pause="8" data-options-ease="ease-out">
+{dede:arclist typeid='8' addfields='mp4' channelid='1' orderby='id' orderway='asc' limit='0,1' }
+<li   class="active"><div id="tempImage_0"></div><video width="100%" height="100%" autoplay loop preload="auto" class="slider-video" style="width:100%; height:auto;"><source src="[field:mp4/]" type="video/mp4"></source></video><div class="mask"></div><a target="_blank" ><div><p class="title ellipsis">[field:shorttitle/]</p><p class="subtitle">[field:description/]</p></div><div class="sliderArrow fa fa-angle-down"></div></a></li>
+{/dede:arclist}
+{dede:arclist typeid='8' orderby='id' orderway='asc' limit='1,10'}
+<li style="background-image:url([field:litpic/])" ><div id="tempImage_[field:autoindex/]"></div><img style="display:none" src="[field:litpic/]" /><div class="mask"></div><a target="_blank" ><div><p class="title ellipsis">[field:shorttitle/]</p></div><div class="sliderArrow fa fa-angle-down"></div></a></li>
+{/dede:arclist}
+</ul></div><div id="mindex" data-options-ease="Expo.easeInOut" data-options-speed="1" data-options-sscreen="0"></div>
+<div id="mteam" class="module">
+    <div class="bgmask"></div>
+  <div class="content layoutslider">
+    <div class="header wow">
+      <p class="title">XunmoBan</p>
+            <p class="subtitle">XunmoBan</p>
+      </div>
+    <div class="module-content fw">
+      <div class="wrapper">
+        <ul class="content_list" data-options-sliders="1" data-options-margin="0" data-options-ease="cubic-bezier(0.8,0.2,0.2,1)" data-options-speed="0">
+                {dede:arclist   row='6'    typeid='5'   }    
+					<li id="teamitem_0"  class="wow">
+            <div class="header wow" data-wow-delay=".2s"><a href="[field:arcurl/]" target="_blank"><img src="[field:picname/]" width="180" height="180" /></a></div>
+            <div class="summary wow">
+              <p class="title"><a href="[field:arcurl/]">[field:title/]</a></p>
+                            <p class="subtitle">[field:shorttitle/]</p>
+                            <p class="description wow">[field:description function='cn_substr(Html2text("@me")."",250)'/]</p>
+            </div>
+            <a href="[field:arcurl/]" target="_blank" class="details">more<i class="fa fa-angle-right"></i></a>
+          </li>
+               {/dede:arclist} 
+                  </ul>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <a href="http://www.xunmoban.com/" class="more wow">MORE<i class="fa fa-angle-right"></i></a>
+  </div>
+</div>
+<div id="mproject" class="module">
+     <div class="bgmask"></div>
+   <div class="content layoutmasonry">
+       <div class="header wow">
+         {dede:type typeid="1"}
+          <p class="title">[field:typename/]</p>
+          <p class="subtitle">[field:engtype/]</p>{/dede:type}
+       </div>
+              <div id="category" class="hide wow">
+                      {dede:channel    typeid ='1'  type ='son'    currentstyle="<a href='~typelink~' class='active'>~typename~</a>" }
+<a href="[field:typelink/]">[field:typename/]</a>
+ {/dede:channel} 
+                  </div>
+              <!--yyLayout masonry-->
+       <div class="module-content" id="projectlist">
+                                 <div class="projectSubList" id="projectSubList_">
+               <div class="projectSubHeader">
+                   <p class="title"></p>
+                   <p class="subtitle"></p>
+               </div>
+               <div class="wrapper">
+                 <ul class="content_list" data-options-sliders="3" data-options-margin="30" data-options-ease="cubic-bezier(0.8,0.2,0.2,1)" data-options-speed="0">
+                     {dede:arclist     typeid='1'    row='8'}
+					 <li id="projectitem_[field:autoindex runphp='yes']@me=$GLOBALS['autoindex']-1;[/field:autoindex]" class="projectitem wow">
+                     <a href="[field:arcurl/]" class="projectitem_content" target="_blank">
+                        <div class="projectitem_wrapper">
+                            <div class="project_img"><img src="[field:picname/]" width="650" height="385"/></div>
+                            <div class="project_info">
+                               <div>
+                                  <p class="title">[field:title/]</p>
+                                  <p class="subtitle">[field:shorttitle/]</p>
+                                  <p class="description hide">[field:description function='cn_substr(Html2text("@me")."",250)'/]</p>
+                               </div>
+                            </div>
+                        </div>
+                      </a>
+                   </li>
+{/dede:arclist}
+                                    </ul>
+              </div><!--wrapper-->
+            </div><!--projectSubList-->            
+             {dede:type typeid="1"}<a href="[field:typelink/]" class="more wow">MORE<i class="fa fa-angle-right"></i></a> {/dede:type}
+                               </div>
+       <!--projectlist-->
+       <div class="clear"></div>
+   </div>
+</div><!--project--><div id="mpage" class="module">
+    <div class="bgmask"></div>
+  <div class="content">
+    <div class="module-content">
+      <div class="wrapper">{dede:type typeid="2"}
+        <ul class="slider one">
+                    <li>
+            <div class="header wow" data-wow-delay=".2s">
+              <p class="title">[field:typename/]</p>
+          <p class="subtitle">[field:engtype/]</p>
+              </div>
+            <div class="des-wrap">
+              <p class="description wow" data-wow-delay=".3s">[field:description function='cn_substr(Html2text("@me")."...",800)'/]...</p>
+            </div>
+            <a href="[field:typelink/]" class="more wow" data-wow-delay=".5s">MORE<i class="fa fa-angle-right"></i></a>            <div class="fimg wow" style="background-image:url(/xunmoban/pic/habout.jpg)"></div>
+            </li>
+                  </ul>{/dede:type}
+      </div>
+    </div>
+  </div>
+</div>
+<div id="mnews" class="module">
+    <video width="100%" height="100%" autoplay loop preload="auto" class="slider-video" style="width:100%; height:auto;position:absolute; top:0; left:0">
+    <source src="/xunmoban/pic/new.mp4" type="video/mp4">
+    </source>
+  </video>
+    <div class="bgmask"></div>
+  <div class="content layoutslider">
+    <div class="header wow">{dede:type typeid="6"}
+      <p class="title">[field:typename/]</p>
+          <p class="subtitle">[field:engtype/]</p>{/dede:type}
+      </div>
+    <div class="module-content" id="newslist">
+      <div class="wrapper">
+        <ul class="content_list" data-options-sliders="2" data-options-margin="40" data-options-ease="cubic-bezier(0.8,0.2,0.2,1)" data-options-speed="0.5"  data-options-mode="horizontal" data-options-wheel="0">
+{dede:arclist   row='4'   typeid="6"}
+                    <li id="newsitem_[field:autoindex runphp='yes']@me=$GLOBALS['autoindex']-1;[/field:autoindex]" class="wow newstitem left"><a class="newscontent" target="_blank" href="[field:arcurl/]">
+            <div class="news_wrapper">
+              <div class="newsbody">
+                <p class="date"><span class="md">[field:pubdate function="MyDate('Y',@me)"/]<span>-</span></span><span class="year">[field:pubdate function="MyDate('m-d',@me)"/]</span></p>
+                <p class="title">[field:title/]</p>
+                <div class="separator"></div>
+                <p class="description">[field:description function='cn_substr(Html2text("@me")."...",150)'/]...</p>
+              </div>
+            </div>
+            <div class="newsimg" style="background-image:url([field:picname/])"></div>
+            </a>
+            <a href="/" target="_blank" class="details">more<i class="fa fa-angle-right"></i></a>
+            </li>
+                   {/dede:arclist}  
+                  </ul>
+      </div>
+    </div>
+    <div class="clear"></div>
+   {dede:type typeid="6"}
+      <a href="[field:typelink/]" class="more wow">MORE<i class="fa fa-angle-right"></i></a> {/dede:type}
+    <div style="height:0"> </div>
+  </div>
+</div>
+<div id="mpartner" class="module">
+    <div class="bgmask"></div>
+  <div class="content layoutslider">
+    <div class="header wow fw" data-wow-delay=".1s">
+      <p class="title">XunmoBan</p>
+            <p class="subtitle">XunmoBan</p>
+      </div>
+    <div class="module-content fw">
+      <div class="wrapper">
+        <ul class="content_list" data-options-ease="cubic-bezier(0.8,0.2,0.2,1)" data-options-speed="0">
+                    <li id="partneritem_0" class="wow">
+
+				{dede:arclist    typeid='13'     row='50'  }
+[field:global name=autoindex runphp="yes"]if(@me%9==0)@me="<li id='partneritem_0' class='wow'>";else @me="";[/field:global]
+		 <a href="[field:arcurl/]" title="[field:title/]" target="_blank"><img src="[field:picname/]" width="160" height="80" /></a>
+		{/dede:arclist}</li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+</div><div id="mcontact" class="module">
+    <div class="bgmask"></div>
+  <div class="content">
+    <div class="header wow fadeInUp fw" data-wow-delay=".1s">
+    <p class="title">XunmoBan</p>
+            <p class="subtitle">XunmoBan</p>
+      </div>
+    <div id="contactlist" class="fw">
+      <div id="contactinfo" class="fl wow" data-wow-delay=".2s">
+      
+        <h3 class="ellipsis name">{dede:global.cfg_corporate/}</h3>
+        <p class="ellipsis add"><span>地址：</span>{dede:global.cfg_address/}</p>
+        <p class="ellipsis tel"><span>电话：</span>{dede:global.cfg_tel/}</p>
+                <p class="ellipsis mobile"><span>手机：</span>{dede:global.cfg_mobile/}</p>
+                <p class="ellipsis email"><span>邮箱：</span>{dede:global.cfg_email/}</p>
+        <div><a class="fl" target="_blank" href="{dede:global.cfg_weibo/}" id="sweibo"><i class="fa fa-weibo"></i></a><a class="fl" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.kefu/}&site=qq&menu=yes"><i class="fa fa-qq"></i></a> <a id="mpbtn" class="fl" href="{dede:global.cfg_code/}"><i class="fa fa-weixin"></i></a></div>
+      </div>
+      <div id="contactform" class="fr wow" data-wow-delay=".2s">
+        <form action="" method="post">
+          <p>
+            <input type="text" class="inputtxt name" name="name" placeholder="姓名" autocomplete="off" />
+          </p>
+          <p>
+            <input type="text" class="inputtxt email" name="email"  placeholder="邮箱"  autocomplete="off"/>
+          </p>
+          <p>
+            <input type="text" class="inputtxt tel" name="tel"  placeholder="电话"  autocomplete="off"/>
+          </p>
+          <p>
+            <textarea class="inputtxt cont" name="content"   placeholder="内容" autocomplete="off"></textarea>
+          </p>
+          <p>
+            <input class="inputsub" type="submit" value="提交" />
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div></div>
+{dede:include filename="footer.htm"/}
+</body></html>
